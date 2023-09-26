@@ -1,9 +1,7 @@
 # GPU-accelerated SIFT-based copy-move forgery detection for very high resolution images
 A Python package for copy-move forgery detection based on GPU acceleration for Gigapixel imagery
 
-# Installation
-
-## Install Python dependencies
+## Installation
 
 Use Anaconda and the provided **environment.yml** to set up the environment:
 
@@ -12,7 +10,7 @@ $ conda env create -f environment.yml
 $ conda activate cuml-torch-new
 ```
 
-# Running the copy-move detector
+## Running the copy-move detector
 
 Use one of the following commands to check the input arguments:
 ```
