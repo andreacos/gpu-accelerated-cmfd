@@ -68,10 +68,15 @@ Use ```-gpu 1``` to enable GPU or ```-gpu 0```  to work on the CPU.
 ## Using tiled-SIFT
 
 To set the number of image tiles, use ```--tx``` (vertical tiles) and ```--ty``` (horizontal tiles). This will split the image
-into --tx x --ty tiles  processed separately.
+into --tx \times --ty tiles processed separately.
 
-## Using max-size
+## Choosing the localisation algorithm
 
-If ```max(width, height) > --maxsize```, the image is down-sampled in such a way that ```max(width, height) = --maxsize```.
-The output binary mask is resized to the original input size. When using tile-based SIFT, the ```--maxsize``` value refers to each tile and not to the input image size.
+The software supports 4 different localisation strategies, which produce similar (or exactly the same) localisation maps. The difference is in their optimisations. Use the ```-ls``` argument to select the localisation algorithm.
+- v1.0: the original Amerini et al.'s method, which works only on small images and takes hours (days) on very high resolution images
+- v1.5: the original method, partially speeded-up with GPU, but sharing the same problems of the original
+- v2.0: new method with full GPU acceleration and no sliding window
+- v3.0: new method, improving v2.0, with optimised image warping and zncc computation with full GPU acceleration and no sliding window
+
+
 
