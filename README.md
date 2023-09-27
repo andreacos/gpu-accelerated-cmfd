@@ -3,10 +3,10 @@
 # GPU-accelerated SIFT-based copy-move forgery detection for very high resolution images
 A Python package for copy-move forgery detection based on GPU acceleration for Gigapixel imagery. This repository is an implementation of the method in: 
 
-_[A GPU-accelerated Algorithm for Copy Move Detection in large-scale satellite images](http://clem.dii.unisi.it/~vipp/website_resources/publications/conferences/2023_SPIE_Paper_CopyMoveGPU.pdf)_
+[_A GPU-accelerated Algorithm for Copy Move Detection in large-scale satellite images_](http://clem.dii.unisi.it/~vipp/website_resources/publications/conferences/2023_SPIE_Paper_CopyMoveGPU.pdf)
 
-Mauro Barni, Andrea Costanzo, Giovanna Maria Dimitri and Benedetta Tondi.
-Processings of SPIE Sensor+Imaging, Amsterdam, Netherlands, 3 - 6 September 2023.
+_Mauro Barni, Andrea Costanzo, Giovanna Maria Dimitri and Benedetta Tondi.
+Processings of SPIE Sensor+Imaging, Amsterdam, Netherlands, 3 - 6 September 2023._
 
 A new, optimised tool that can efficiently detect and localise copy-move forgeries in satellite images where off-the-shelf, state-of-the-art copy-move detectors fail. By building upon an existing method that performed well on standard images but was unable to run successfully on satellite images, in this GPU-accelerated method each step of the detection pipeline has been either optimised or replaced with new, more efficient algorithms. By doing so, the algorithm can process satellite images with resolution above 1 Gigapixels with good performance in terms of processing time, whereas the original technique and its existing optimisations are crashing out.
 
