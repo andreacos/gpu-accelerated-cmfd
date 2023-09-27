@@ -6,6 +6,7 @@ A Python package for copy-move forgery detection based on GPU acceleration for G
 This repository is an implementation of the method in: 
 
 [A GPU-accelerated Algorithm for Copy Move Detection in large-scale satellite images](http://clem.dii.unisi.it/~vipp/website_resources/publications/conferences/2023_SPIE_Paper_CopyMoveGPU.pdf)
+
 Mauro Barni, Andrea Costanzo, Giovanna Maria Dimitri and Benedetta Tondi.
 Processings of SPIE Sensor+Imaging, Amsterdam, Netherlands, 3 - 6 September 2023.
 
